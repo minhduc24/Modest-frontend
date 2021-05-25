@@ -1,0 +1,798 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a:link, a:active, a:visited {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+section {
+    padding-top: 80px !important;
+    padding-bottom: 100px !important;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #292f36;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-left: 10px solid #e1e6ea;
+    padding: 0px 14px;
+    margin-bottom: 60px;
+}
+
+header {
+    background-color: #1d2126;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 15px;
+    line-height: 30px;
+}
+
+header ul li {
+    height: 30px;
+    display: inline-block;
+}
+
+header h1 {
+    height: 30px    ;
+}
+
+header ul {
+    height: 30px;
+}
+
+header ul li a {
+    color: #a4aead;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+header ul li a.active {
+    color: #23b7a4;
+    border: 2px solid #23b7a4;
+}
+
+header ul li a:hover {
+    color: #5b6168;
+    border: 2px solid #5b6168;
+}
+
+/* jumbotron  */
+#jumbotron {
+    background: #3c3c52 url(image/pic.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#jumbotron .container {
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#jumbotron .info {
+    max-width: 655px;
+}
+
+#jumbotron .info h1 {
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#jumbotron .info p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccd0d7;
+    margin-top: 14px;
+}
+
+#jumbotron .container .info a {
+    display: inline-block;
+    height: 44px;
+    padding: 0px 28px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 44px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 11px;
+}
+
+#jumbotron .container .info a:last-child {
+    margin-right: 0px;
+}
+
+#jumbotron .container .info a:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+   
+}
+
+#jumbotron .container .info div {
+    margin-top: 36px;
+    font-size: 0;
+}
+
+#jumbotron .dots {
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+
+#jumbotron .dots a {
+    width: 13px;
+    height: 13px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    text-indent: -100000px;
+    margin-left: 9px;
+}
+
+#jumbotron .dots a:hover, #jumbotron .dots a.active {
+    background-color: white;
+}
+
+/*About section*/
+
+.about-section {
+    border-bottom: 2px solid #dde1e4;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about > div {
+    max-width: 654px;
+    margin-right: 74px;
+}
+
+#about > ul {
+    max-width: 487px;
+}
+
+#about div p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    margin-bottom: 25px;
+}
+
+#about > div > ul {
+    font-size: 0;
+    margin-top: 108px;
+}
+
+#about > div > ul > li {
+    display: inline-block;
+    margin-left: 1px;
+}
+
+#about > div > ul > li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-indent: -10000000px;
+    background-color: #c8cdd0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#about > div > ul > li:nth-child(1) a {
+    background-image: url(image/facebook.png);
+}
+
+#about > div > ul > li:nth-child(2) a {
+    background-image: url(image/twitter.png);
+}
+
+#about > div > ul > li:nth-child(3) a {
+    background-image: url(image/google.png);
+}
+
+#about > div > ul > li:nth-child(4) a {
+    background-image: url(image/dribble.png);
+}
+
+#about > div > ul > li:nth-child(5) a {
+    background-image: url(image/behande.png);
+}
+
+#about > div > ul > li a:hover {
+    background-color: #d0d5d9;
+}
+
+#about > ul li h3 {
+    color: #292f36;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 69px;
+    margin-bottom: 13px;
+}
+
+#about > ul li p {
+    color: #8d8f92;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 69px;
+    margin-bottom: 31px;
+}
+
+#about > ul {
+    counter-reset: about-counter;
+}
+
+#about > ul li {
+    position: relative;
+}
+
+#about > ul li::before{
+    content: counter(about-counter, decimal-leading-zero);
+    counter-increment: about-counter;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #23b7a4;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/** partners **/
+#partners {
+    display: flex;
+    justify-content: space-between;
+}
+
+#partners > div{
+    width: calc((100% - 90px)/4);
+    background-color: #e1e6ea;
+}
+
+#partners > div .link {
+    display: none;
+}
+
+#partners > div .partner-info {
+    padding: 21px 20px;
+}
+
+#partners div img {
+    max-width: 100%;
+    display: block;
+}
+
+#partners .partner-info p:first-child {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #292f36;
+}
+
+#partners .partner-info p:nth-child(2) {
+    font-size: 14px;
+    color: #8d8f92;
+    margin-top: 10px;
+}
+
+#partners div {
+    position: relative;
+}
+
+#partners div .link {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#partners > div:hover .link {
+    display: flex;
+    opacity: 1;
+}
+
+#partners div .link ul {
+    font-size: 0;
+}
+
+#partners div .link ul li {
+    display: inline-block;
+    margin-right: 1px;
+}
+
+#partners div .link ul li:last-child {
+    margin-right: 0px;
+}
+
+#partners div .link ul li a {
+    display: none;
+    text-indent: -1000000px;
+    width: 50px;
+    height: 50px;
+    background-color: #3a454d;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#partners > div:hover .link a {
+    display: block;
+}
+
+#partners div .link ul li a:hover {
+    background-color: #4e5a62;
+}
+
+#partners div .link ul li:nth-child(1) a {
+    background-image: url(image/twitter.png);
+}
+
+#partners div .link ul li:nth-child(2) a {
+    background-image: url(image/facebook.png);
+}
+
+#partners div .link ul li:nth-child(3) a {
+    background-image: url(image/linkin.png);
+}
+
+#partners div .partner-info:hover p:first-child {
+    color: #d7d8d9;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#partners div .partner-info:hover p:last-child {
+    color: #e1e2e3;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#partners div .partner-info:hover {
+    background-color: #3a454d;
+    transition: background-color 0.4s ease-in-out;
+}
+
+
+/* workd */
+
+#work {
+    background-color: #3a454d;
+    background-repeat: no-repeat;
+}
+
+#work .container h2 {
+    color: #ffffff;
+    border-left: 10px solid #4e5a62;
+}
+
+#lwork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#lwork > div > img {
+    display: block;
+    max-width: 100%;
+}
+
+#lwork > div {
+    width: calc((100% - 60px)/3);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#lwork > div:last-child {
+    margin-right: 0;
+}
+
+#lwork  .mark {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(44, 47, 54, 0.5);
+    transition: opacity 0.5s ease-in-out;
+    overflow-y: hidden;
+}
+
+#lwork  .mark p {
+    background-color: #292f36;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 60px;
+    bottom: -60px;
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    transition: bottom 0.5s ease-in-out;
+}
+
+#lwork .mark a {
+    display: block;
+    margin:  0px auto;
+    background-image: url(image/plus.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    text-indent: -100000000px;
+}
+
+#lwork > div:hover .mark {
+    opacity: 1;
+    transition: opacity 0.5 ease-in-out;
+}
+
+#lwork > div:hover .mark p {
+    bottom: 0;
+}
+
+#lwork #action a {
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+#lwork #action {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+/********* what we do ************/ 
+
+#do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#do > div {
+    width: calc((100% - 90px) / 4);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 83px;
+}
+
+#do > div:nth-child(4n + 1) {
+    background-image: url(image/cogs.png);
+}
+
+#do > div:nth-child(4n + 2) {
+    background-image: url(image/pencil.png);
+}
+
+#do > div:nth-child(4n + 3) {
+    background-image: url(image/mobile.png);
+}
+
+#do > div:nth-child(4n + 4) {
+    background-image: url(image/clock.png);
+}
+
+#do  div p {
+    text-align: center;
+}
+
+#do  div p:first-child {
+    font-size: 17px;
+    color: #292f36;
+    text-transform: uppercase;
+}
+
+#do div p:last-child {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    margin-top: 28px;
+    margin-bottom: 85px;
+}
+
+/**** features ****/ 
+
+#features {
+    background-color: #3a454d;
+}
+
+#features div h2 {
+    color: white;
+    border-left-color: #4e5a62;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-between;
+}
+
+#feature > div {
+    width: calc ((100% - 60px) / 3);
+}
+
+#feature > div img {
+    display: block;
+    margin-bottom: 43px;
+}
+
+#feature > div > p {
+    display: block;
+    width: 360px;
+}
+
+#feature > div > p:nth-child(2) {
+    color: white;
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#feature > div > p:nth-child(3) {
+    color: #dcdfe1;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 13px;
+}
+
+
+
+/** contact **/
+
+#stay h2 {
+    margin-bottom: 0px;
+    margin-top: -19px;
+}
+
+#map {
+    display: block;
+    width: 100%;
+    height: 364px;
+    background-image: url(image/map.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: -44px;
+}
+
+#contact {
+    position: relative;
+}
+
+
+#contact #contactinfo h4 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #292f36;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 59px;
+    position: absolute;
+    top: 0;
+}
+
+
+#contact #contactinfo p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    display: block;
+    width: 555px;
+}
+
+#contact #contactinfo p:nth-child(2) {
+    margin-top: 34px;
+}
+
+#contact form {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 555px;
+    height: 100%;
+    top: -131px;
+    background-color: #ffffff;
+
+}
+
+#contact form label {
+    font-size: 14px;
+    line-height: 26px;
+    color: #8d8f92;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+#contact form input {
+    margin-left: 30px;
+}
+
+#contact form input[type="email"] {
+    margin-left: 255px;
+}
+
+#contact form > div{
+    display: flex;
+}
+
+#contact form > div #yourname label {
+    position: relative;
+    top: 30px;
+}
+
+#contact form > div #yourname input {
+    position: absolute;
+    left: 0;
+    top: 56px;
+    display: block;
+    width: 242px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #eaeef1;
+    border: none;
+}
+
+#contact form > div #youremail label {
+    position: relative;
+    margin-left: 185px;
+    top: 30px;
+}
+
+#contact form > div #youremail input {
+    position: absolute;
+    top: 56px;
+    right: 26px;
+    display: block;
+    width: 242px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #eaeef1;
+    border: none;
+}
+
+#contact form  #yourmessage label {
+    position: relative;
+    margin-top: 124px;
+}
+
+#contact form  #yourmessage textarea {
+    position: absolute;
+    top: 175px;
+    left: 30px;
+    display: block;
+    width: 495px;
+    height: 160px;
+    border-radius: 5px;
+    background-color: #eaeef1;
+    border: none;
+}
+
+#contact form button {
+    margin-top: 190px;
+    margin-left: 30px;
+    display: block;
+    height: 44px;
+    width: 144px;
+    background-color: #23b7a4;
+    color: white;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    background-color: #3a454d;
+    display: block;
+    height: 95px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 37px;
+}
+
+footer .container {
+    position: relative;
+}
+
+footer .container div {
+    position: absolute;
+    right: 0;
+    top: 38px;
+}
+
+footer .container div ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container div ul li a {
+    color: white;
+    text-indent: -10000000px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    height: 20px;
+    width: 35px;
+}
+
+footer .container div ul li:nth-child(1) a {
+    background-image: url(image/twitter.png);
+}
+
+footer .container div ul li:nth-child(2) a {
+    background-image: url(image/facebook.png);
+}
+
+footer .container div ul li:nth-child(3) a {
+    background-image: url(image/skype.png);
+}
+
+footer .container div ul li:nth-child(4) a {
+    background-image: url(image/behande.png);
+}
+
+
+footer .container div ul li:nth-child(5) a {
+    background-image: url(image/linkin.png);
+}
